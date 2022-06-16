@@ -1,0 +1,122 @@
+
+body{
+  background-image:url("img/bg-intro-desktop.png");
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px
+}
+
+main{
+  width:70%;
+  margin:auto;
+  display:flex;
+
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+
+
+.text{
+  flex: 50%;
+  padding:2em;
+  color:#fff;
+  text-align:left;
+}
+
+.text h2{
+  color: #fff;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+
+}
+
+.form-box{
+
+  padding:20px;
+}
+
+#registration{
+  background:#F9F9F9;
+  padding:25px 30px;
+  width: 100%;
+}
+
+fieldset{
+  border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+
+}
+
+button{
+  font-family: "poppins", san-serif;
+  background-color: hsl(248, 32%, 49%);
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  border:none;
+  padding:10px 50px ;
+  border-radius: 5px;
+  width: 100%;
+
+}
+
+
+#registration input[type="text"],
+#registration input[type="email"],
+#registration input[type="password"]
+{
+  width:91%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:15px;
+  border-radius: 3px;
+}
+
+#registration input[type="text"]:hover,
+#registration input[type="email"]:hover,
+#registration input[type="password"]:hover
+{
+  -webkit-transition:border-color 0.3s ease-in-out;
+  	-moz-transition:border-color 0.3s ease-in-out;
+  	transition:border-color 0.3s ease-in-out;
+  	border:1px solid #AAA;
+}
+
+#registration button[type="submit"] {
+  cursor:pointer;
+	width:100%;
+	border:none;
+	background:hsl(154, 59%, 51%);
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+  border-radius: 5px;
+}
+
+#registration button[type="submit"]:hover {
+	background:lime;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#registration button[type="submit"]:active
+{ box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.terms{
+  color:hsl(0, 100%, 74%);
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 375px) {
+  .text, .form-box {
+    flex: 100%;
+  }
+}
